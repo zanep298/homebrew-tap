@@ -1,4 +1,4 @@
-class Zf < Formula
+class Zforge < Formula
   desc "TDD-first AI development workflow CLI"
   homepage "https://github.com/zanep298/zforge"
   version "0.0.3"
