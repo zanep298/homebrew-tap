@@ -1,22 +1,22 @@
 class Zforge < Formula
   desc "TDD-first AI development workflow CLI"
   homepage "https://github.com/zanep298/zforge"
-  version "0.0.7"
+  version "0.0.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/zanep298/zforge/releases/download/v#{version}/zforge-aarch64-apple-darwin.tar.gz"
-      sha256 "eba4a807adfe7bf87400e193f2dd1276c61cebe0ee0c4dfaf5cc4be29d35cedb"
+      sha256 "52d26417af71f4eeb55de5c4e9e9916b10d530725ae41ad0013a5665b9053d57"
     else
       url "https://github.com/zanep298/zforge/releases/download/v#{version}/zforge-x86_64-apple-darwin.tar.gz"
-      sha256 "15003463009a71e486f786c60b049b68ed771d3964ad088ec4f639e68b85ecf6"
+      sha256 "40a336af1da664e74ac29e67cada3581295e6739ad4901b74fe8ed0fa9598522"
     end
   end
 
   on_linux do
     url "https://github.com/zanep298/zforge/releases/download/v#{version}/zforge-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "c1d5756c3bd9a6bf8f3f329a82c14dcc62620a11352e925d4e694962196f7f10"
+    sha256 "54ed8b805af3021fdc237389ca66f73d7cfe1d40958dc2ac350868af7cc358d7"
   end
 
   def install
